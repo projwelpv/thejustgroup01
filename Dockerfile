@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . ./
 RUN npm install
 #RUN npm audit fix --force
-RUN npm start
+RUN nohup npm start &
 
 
 # Stage 2 - the production environment
